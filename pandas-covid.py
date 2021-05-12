@@ -73,9 +73,9 @@ df_covid_other['new_cases_7dma'] =\
 
 plt.figure(figsize=[15, 10])
 plt.grid(True)
-# plt.plot(df_covid_oregon['submission_date'],
-#          df_covid_oregon['new_case'],
-#          label='OR daily new COVID cases')
+plt.plot(df_covid_oregon['submission_date'],
+         df_covid_oregon['new_case'],
+         label='OR daily new COVID cases')
 plt.plot(df_covid_oregon['submission_date'],
          df_covid_oregon['new_cases_7dma'],
          label='OR 7-day average of new COVID cases')
